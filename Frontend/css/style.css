@@ -46,7 +46,7 @@ nav {
 .slider {
   background: url("../Backgroun-Image/pexels-pixabay-235986.jpg");
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
-    overflow-x: hidden;
+    overflow: hidden;
     /* overflow-y: hidden; */
    
 }
@@ -134,7 +134,7 @@ display: flex;
 .feature{
   display: flex;
   flex-direction: column;
-  text-align: center;
+align-items: center;
 }
 .featureIcon{
   width: 50px;
@@ -143,10 +143,17 @@ display: flex;
 .featureTitle{
 font-size: 20px;
 font-weight: 600;
-margin-top: 20px;
+margin: 20px;
 }
 .featureDesc{
 color: gray;
 width: 50%;
 height: 100px;
+clip-path:polygon(0 15, 100% 0%, 100% 100%, 0 100%);
+}
+.product{
+  height: 10vh;
+  background-color: whitesmoke;
+  position: relative;
+ 
 }

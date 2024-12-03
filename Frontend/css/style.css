@@ -297,3 +297,46 @@ cursor: pointer;
 .galleryImage{
   width: 100%;
 }
+.newSeason{
+  display: flex;
+}
+.nsItem{
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content:center ;
+}
+.nsImage{
+  width: 100%;
+ height: 400px;
+}
+.nsTitle{
+  font-size: 40px;
+}
+.nsButton{
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer{
+  display: flex;
+}
+.footerLeft{
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50pz;
+}
+.footerRight{
+  flex: 1;
+}
+.footerMenuTitle{
+font-size: 16px;
+}
+.fList{
+
+}

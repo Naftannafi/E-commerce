@@ -170,7 +170,7 @@ height: 100px;
   right: 0;
   margin: auto;
   padding: 10px 50px;
-  display: flex;
+  display: none;
   flex-direction: column;
   box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
 -webkit-box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
@@ -219,7 +219,7 @@ background-color: green;
 color: white;
 cursor: pointer;
 }
-.close{
+.closeButton{
   width: 20px;
   height: 20px;
   position: absolute;
@@ -230,6 +230,7 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   cursor: pointer;
+  padding: 2px;
 }
 .productImage{
   width: 50%;
@@ -284,4 +285,15 @@ cursor: pointer;
 .productButton:hover{
   background-color: white;
   color: black;
+}
+.gallery{
+ padding: 50px; 
+ display: flex;
+}
+.galleryItem{
+  flex: 1;
+  padding: 50px;
+}
+.galleryImage{
+  width: 100%;
 }

@@ -128,6 +128,23 @@ nav {
 .sliderItem:nth-child(5) .sliderBg{
   background-color: rgb(124,115,80);
 }
+
+.sliderItem:nth-child(1) .sliderPrice {
+  color: #369e62;
+}
+.sliderItem:nth-child(2) .sliderPrice {
+  color: white;
+}
+.sliderItem:nth-child(3) .sliderPrice {
+  color: teal;
+}
+.sliderItem:nth-child(4) .sliderPrice {
+  color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .sliderPrice {
+  color: cornsilk;
+}
+
 .features{
 display: flex;
   align-items: center;
@@ -138,6 +155,7 @@ display: flex;
   display: flex;
   flex-direction: column;
 align-items: center;
+text-align: center;
 }
 .featureIcon{
   width: 50px;
@@ -154,7 +172,7 @@ width: 50%;
 height: 100px;
 }
 .product{
-  height: 120vh;
+  height: 100vh;
   background-color: whitesmoke;
   position: relative;
  clip-path:polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
@@ -173,8 +191,9 @@ height: 100px;
   display: none;
   flex-direction: column;
   box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
--webkit-box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
--moz-box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
+ -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+
 }
 .payTitle{
   font-size: 20px;
@@ -212,11 +231,12 @@ height: 40px;
 bottom: -40px;
 width: 100%;
 left: 0;
- box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
--webkit-box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
--moz-box-shadow: 0px 1px 26px -3px rgba(0,0,0,0.87);
+
+-webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
 background-color: green;
 color: white;
+border: none;
 cursor: pointer;
 }
 .closeButton{
@@ -228,6 +248,7 @@ cursor: pointer;
   top: 10px;
   right: 10px;
   display: flex;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   padding: 2px;
@@ -253,11 +274,11 @@ padding: 50px;
 }
 .colors,.sizes{
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .color{
-  width: 25px;
-  height: 25px;
+  width: 32px;
+  height: 32px;
   border-radius: 5px;
   background-color: black;
   margin-right: 10px;
@@ -312,7 +333,7 @@ cursor: pointer;
 }
 .nsImage{
   width: 100%;
- height: 400px;
+ height: 500px;
 }
 .nsTitle{
   font-size: 40px;
@@ -337,8 +358,11 @@ font-size: 16px;
 .fList{
 padding: 0;
 list-style: none;
-color: gray;
-cursor: pointer;
+}
+.fListItem {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
 }
 .footerRight{
   flex: 1;
@@ -375,13 +399,14 @@ cursor: pointer;
  .search{
   display: none;
  }
- .menuItem{
+
+ .navBottom{
+flex-wrap: wrap;
+ }
+  .menuItem{
   margin: 20px;
   font-weight: 700;
   font-size: 20px;
- }
- .navButton{
-flex-wrap: wrap;
  }
  .slider{
 clip-path:none;
@@ -429,7 +454,7 @@ align-items: center;
   position: relative;
   top: 0;
  }
- .productitle{
+ .productTitle{
   font-size: 50px;
   margin: 0;
  }
@@ -446,7 +471,7 @@ align-items: center;
   flex-direction: column;
   align-items: center;
  }
- .footerLeft{
+ .footerRight{
   padding: 20px;
   width: 90%;
   align-items: center;
@@ -456,5 +481,4 @@ align-items: center;
   width: 90%;
   padding: 20px;
  }
- 
 }
